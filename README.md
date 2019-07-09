@@ -1,5 +1,5 @@
-# REST-Services-MySQL
-Maven, Spark Framework and Hibernate
+# SERVICIOS REST DE CODIGO MOVIL
+Se utilizó : Maven, Spark Framework and Hibernate
 
 * Maven
 	- En los ficheros .pom se encuentran todas las librerias que se usan en el proyecto y su versión.
@@ -18,14 +18,16 @@ Maven, Spark Framework and Hibernate
 * INSTALACIÓN
 	- Clonar el respositorio
 	- En eclipse: File --> Import --> "Existing Maven Projects"
-	- Crear una base de datos (create database test) en MySQL.
+	- la base de datos esta en: 3.18.116.129
+	- Usuario db: codigo
+	- clave bd: ------ T3
 	- En fichero persistence.xml poner datos de conexión, es decir, contraseña, nombre de usuario y nombre de la base de datos. En este caso se llama test.
 
 * COMPILAR
-	- Desde terminal o desde Eclipse: mvn package
+	- Desde terminal o desde Eclipse: Run as, Maven Build, colocare en "Goals" clean install, Cada cambio hace lo mismo
 	- Ir a la carpeta target del proyecto y tendremos un jar con todo listo para funcionar.
 
 * EJECUTAR
 	- java -jar spark-rest.jar
 	- Ir al localhost:8080 y el poryecto estará funcionando.
-	- Servicio REST de prueba: localhost:8080/test/id, siendo id el id de un objeto existente en la tabla test de la base de datos test.
+	- Servicio REST de prueba: localhost:8080/persona/id, siendo id el id de un objeto existente en la tabla Persona de la base de datos test.
